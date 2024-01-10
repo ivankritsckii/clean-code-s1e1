@@ -19,32 +19,32 @@
             <label for="new-task">Add Item</label>
             <div class="task-row_wrapper">
                 <input id="new-task"class="task" type="text">
-                <button>Add</button>
+                <button class="sum-btn">Add</button>
             </div>
       </p>
       <h3>Todo</h3>
-      <ul id="section_make">
+      <ul id="section_make list-do">
         <li><input type="checkbox">
             <label class="checkbox_text">Pay Bills</label>
             <input type="text" class="checkbox_text">
-            <button class="checkbox_moving-btn">Edit</button>
-            <button class="checkbox_delete-btn"><img src="./remove.svg"></button>
+            <button class="checkbox_moving-btn sum-btn">Edit</button>
+            <button class="checkbox_delete-btn sum-btn"><img src="./remove.svg"></button>
         </li>
         <li class="editMode">
             <input type="checkbox">
             <label class="checkbox_text">Go Shopping</label>
             <input type="text" value="Go Shopping" class="checkbox_text">
-            <button class="checkbox_moving-btn">Save</button>
-            <button class="checkbox_delete-btn"><img src="./remove.svg"></button>
+            <button class="checkbox_moving-btn sum-btn">Save</button>
+            <button class="checkbox_delete-btn sum-btn"><img src="./remove.svg"></button>
         </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li><input type="checkbox" checked>
+      <ul id="completed-tasks list-do">
+        <li class="list-do_item"><input type="checkbox" checked>
             <label class="checkbox_text">See the Doctor</label>
             <input type="text" class="checkbox_text">
-            <button class="checkbox_moving-btn">Edit</button>
-            <button class="checkbox_delete-btn"><img src="./remove.svg"></button>
+            <button class="checkbox_moving-btn sum-btn">Edit</button>
+            <button class="checkbox_delete-btn sum-btn"><img src="./remove.svg"></button>
         </li> 
       </ul>
     </div>

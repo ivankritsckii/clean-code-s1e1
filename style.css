@@ -34,7 +34,7 @@ body {
 .task-row_wrapper {
     display: flex;
 }
-ul {
+.list-do {
     margin:0;
     padding: 0px;
 }
@@ -44,7 +44,7 @@ li, h3 {
 input,button{
     outline:none;
 }
-button {
+.sum-btn {
     background: none;
     border: 0px;
     color: #888;
@@ -53,7 +53,7 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+sum-btn:hover {
     color: #3a3A3a;
 }
 /* Heading */
@@ -93,7 +93,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.list-do_item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -102,47 +102,47 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.list-do_item > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.list-do_item > input[type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+.list-do_item > label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.list-do_item >    input[type="text"] {
     width: 226px
 }
-button.checkbox_delete-btn img {
+.sum-btn.checkbox_delete-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.checkbox_delete-btn img:hover {
+.sum-btn.checkbox_delete-btn img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.list-do#completed-tasks label {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.list-do .list-do_item input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+.list-do .list-do_item.editMode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+.list-do .list-do_item.editMode label {
     display:none;
 }
